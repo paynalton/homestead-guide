@@ -1,109 +1,110 @@
 *****************************
-Homestead-Guide
+Guía-Homestead
 *****************************
 |Gitter|
 
 .. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
-The Ethereum Homestead Guide is the reference documentation accompanying the Homestead release of the Ethereum project.
+La guía paraEthereum Homestead es la documentación de referencia que acompaña a la publicación de la versión Homestead rdel proyecto Ethereum.
 
 `Hosted on ReadTheDocs`_
 
-HOW YOU CAN HELP
+¿COMO PUEDO AYUDAR?
 ================================================================================
-**Homestead Documentation Initiative**
+**Iniciativa de Documentación para Homestead Documentation**
 
-It doesn't matter if you are a beginner or an expert, there are many ways to help.
+No importa si se es principiante o experto, hay muchas maneras de ayudar.
 
-Write Content to the Guide
+Escriba contenido para la guía
 --------------------------------------------------------------------------------
-Help transfer and update content from the Ethereum Wiki, Ethereum Frontier Guide, the Ethereum Stack Exchange, or any other reputable source to relevant pages of the Homestead guide. Alternatively, write your own content for the guide based on experience.
+Ayude a transferir y actualizar contenido desde el wiki de Ethereum, La guía para Frontier de Ethereum, el Ethereum Stack Exchange, o cualquier otra fuente reconocida a páginas relevantes para la guía Homestead. Alternativamente, escriba su propio contenido para la guía basandose en su propia experiencia.
 
-Make sure the documentation you are porting over is still accurate and follows our guidelines for the Homestead docs (https://ethereum-homestead.readthedocs.org/en/latest/about.html).
+Asegurese de que la documentación que está aportando se mantenga verás y respete nuestra guia para los documentos de Homestead (https://ethereum-homestead.readthedocs.org/en/latest/about.html).
 
-Review What Has Been Written
+Revise lo que ha escrito
 --------------------------------------------------------------------------------
-Have a look at our guide (https://ethereum-homestead.readthedocs.org/en/latest/) and give us feedback by visiting our Gitter Chatroom (https://gitter.im/ethereum/homestead-guide) or submit a pull request or issue to this repo. Too EZ.
+Revise nuestra guía (https://ethereum-homestead.readthedocs.org/en/latest/) y retroaliméntenos visitando nuestra sala de chat en Gitter (https://gitter.im/ethereum/homestead-guide), realice un pull request ó reporte un problema en este repositorio. Muy sencillo.
 
-What's In It For Me?
+¿Y qué hay para mi?
 --------------------------------------------------------------------------------
-Your name will forever be immortalized, both in my heart and on the Contributors page in the guide.
-As a side effect, you may also get those good feels that you get when you help improve documentation :-)
+Su nombre será por siempre inmortalizado, tanto en nuestro corazón como en la página Contribuidores de esta guía.
+Como un efecto colateral, también le quedará ese agradable sentimiento que llega cuando se ayuda a mejorar una documentación :-)
 
-GETTING STARTED
+DONDE EMPEZAR
 ======================
 
-This project uses Sphinx (http://www.sphinx-doc.org/en/stable/index.html) to build html that is published to Read the Docs. To run this documentation on your computer, you should do the following:
+Este proyecto utiliza Sphinx (http://www.sphinx-doc.org/en/stable/index.html) para crear el html que está publicado para "Read the Docs". Para usar esta documentación en su propia computadora debería hacer lo siguiente:
 
-Prerequisites
+Prerequisitos
 --------------------------------------------------------------------------------
-* Python 2.6 or later
+* Python 2.6 o superior
+* pypa
 * git
 
-Install Sphinx, etc
+Instalar Sphinx, etc
 --------------------------------------------------------------------------------
-For OSX/Linux users (based on instructions here: https://read-the-docs.readthedocs.org/en/latest/getting_started.html)
+Para usuarios OSX/Linux (basado en instrucciones encontradas aquí: https://read-the-docs.readthedocs.org/en/latest/getting_started.html)
 
-* From command line: ``sudo pip install sphinx``
+* En la línea de comandos: ``sudo pip install sphinx``
 
-For Windows users:
+Para usuarios Windows:
 
 * http://www.sphinx-doc.org/en/stable/install.html#windows-install-python-and-sphinx
 
-Get source code
+Obtener el código fuente
 --------------------------------------------------------------------------------
 * git clone: https://github.com/ethereum/homestead-guide.git
 
-Build and view html
+Compilar una nueva vista HTML
 --------------------------------------------------------------------------------
-* In a terminal window, go to your homestead-guide directory.
+* En una ventana de terminal, vaya a su directorio homestead-guide.
 * ``make html``
 * ``cd build/html``
-* ``open index.html`` (open in web browser)
-* Tip: each time you run ``make html``, just reload your browser to view changes
+* ``open index.html`` (abrir en el navegador web)
+* Tip: cada vez que ejecute ``make html``, simplemente refresque su navegador para ver los cambios
 
 
-RESOURCES
+RECURSOS
 ================================================================================
 
 **Homestead**
 
-* Homestead Guide online: https://ethereum-homestead.readthedocs.org/en/latest/index.html
+* Guía en línea para Homestead: https://ethereum-homestead.readthedocs.org/en/latest/index.html
 * Github: https://github.com/ethereum/homestead-guide
 * Gitter: https://gitter.im/ethereum/homestead-guide
 * Google doc: https://docs.google.com/document/d/1rVjrNgaDRAQdPp4rGqWrEk5fPgiHff0xsYGCyf06oM8/edit
 
-**Legacy Docs**
+**Documentos Legales**
 
 * Ethereum Wiki: https://github.com/ethereum/wiki/wiki
-* Frontier Guide: https://ethereum.gitbooks.io/frontier-guide/content/ (see below for converted files)
-* Souptacular's Giant List of Ethereum Resources: https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/giant_ethereum_resource_list.html
+* Guía para Frontier: https://ethereum.gitbooks.io/frontier-guide/content/ (vea archivos convertidos más abajo)
+* Lista gigante de Recursos Ethereum en Souptacular: https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/giant_ethereum_resource_list.html
 
-**Read the Docs and Sphinx**
+**Lea los Documentos y Sphinx**
 
-- Read the Docs: https://read-the-docs.readthedocs.org/en/latest/getting_started.html
-- Sphinx docs: http://www.sphinx-doc.org/en/stable/contents.html
+- Lea los Documentos: https://read-the-docs.readthedocs.org/en/latest/getting_started.html
+- Documentos para Sphinx: http://www.sphinx-doc.org/en/stable/contents.html
 - reStructuredText Primer: http://www.sphinx-doc.org/en/stable/rest.html
-- RST cheat sheet: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
+- Referencia para RST: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 
-Directory structure
+Estructura de Directorios
 =========================
 
 .. code-block::
 
     homestead-guide
-      build    - workdir, not commited to repo
-      source   - actual content in rst
-        conf.py - sphinx configuration
-      old-docs-for-reference (Frontier era stuff)
-        wiki    - the legacy wiki
-        gitbook - the legacy gitbook resources (converted to rst)
-      make.bat - windows command to build docs
-      Makefile - platforms with make to build docs
+      build    - Directorio de trabajo, no agregar al repositorio
+      source   - contenido actual en rst
+        conf.py - configuración de sphinx
+      old-docs-for-reference (Cosillas del tiempo de Frontier)
+        wiki    - la vieja wiki
+        gitbook - los viejos recursos de gitbook (convertidos a rst)
+      make.bat - comandos de windows para compilar documentos
+      Makefile - para plataformas con make para compilar docs
 
 
-Roadmap for Homestead Guide (Old)
+Historial de la Guía para Homestead (Viejo)
 ================================================================================
 
 * boilerplate using sphinx-quickstart
@@ -117,7 +118,7 @@ Roadmap for Homestead Guide (Old)
 * migrate old frontier-guide content under frontier/gitbook (all md content converted to rst)
 * script to annotate entire wiki with legacy warning
 
-Strategy for migrating old fronter-guide content (Old)
+Estrategia para migrar viejos contenidos de fronter-guide (Viejo)
 ========================================================
 
 * temporaritly include resources about the documentation project within the book itself
@@ -129,4 +130,4 @@ Strategy for migrating old fronter-guide content (Old)
 * include the rst conversion of the wiki
 * include the rst conversion of the gitbook
 
-.. _Hosted on ReadTheDocs: https://ethereum-homestead.readthedocs.org/en/latest/
+.. _Publicado en ReadTheDocs: https://ethereum-homestead.readthedocs.org/en/latest/

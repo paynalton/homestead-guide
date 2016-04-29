@@ -1,14 +1,14 @@
 .. _community:
 
 ********************************************************************************
-Community
+Comunidad
 ********************************************************************************
 
-Please choose your forum wisely when starting a discussion or asking a question, help keep our various forums clean and tidy.
+Por favor elije el foro adecuado cuando inicies una discusión o realice una pregunta, ayude a mantener nuestros foros limpios y ordenados.
 
 Reddit
 ================================================================================
-The `Ethereum subreddit`_ is the most inclusive Ethereum forum, where most of the community discussion is happening and where core devs are also active. This is your forum of choice for generic discussion of news, media coverage, announcements, brainstorming. In general all things Ethereum relevant to the wider community.
+El `Ethereum subreddit`_ is the most inclusive Ethereum forum, where most of the community discussion is happening and where core devs are also active. This is your forum of choice for generic discussion of news, media coverage, announcements, brainstorming. In general all things Ethereum relevant to the wider community.
 
 Strictly no price discussion.
 

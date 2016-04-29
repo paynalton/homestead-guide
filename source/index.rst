@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Ethereum Homestead Documentation
+Documentación para Ethereum Homestead
 ===============================================================================
 
 ..  image:: img/ethereum-homestead-documentation-logo.png
@@ -13,13 +13,13 @@ Ethereum Homestead Documentation
    :alt: ethereum-logo
    :align: center
 
-This documentation is the result of an ongoing collaborative effort by
-volunteers from the Ethereum :ref:`community`.  Although it has not been
-authorized by the :ref:`foundation`, we hope you will find it useful,
-and welcome new :ref:`contributors`.
+Esta documentación es el resultado de un esfuerzo colaborativo en progreso por
+parte de voluntarios de la :ref:`community` Ethereum.  Port tanto esta no ha sido
+autorizada por la :ref:`foundation`, esperamos que te resulte útil,
+y bienvenidos nuevos :ref:`contributors`.
 
 
-Contents
+Contenidos
 ===============================================================================
 
 .. toctree::
@@ -37,7 +37,7 @@ Contents
    about.rst
 
 
-Improve the Documentation
+Mejorar la Documentación
 ===============================================================================
 
-See `this page <https://ethereum-homestead.readthedocs.org/en/latest/about.html>`__ to help us improve the documentation.
+Vea `esta página <https://ethereum-homestead.readthedocs.org/en/latest/about.html>`__ para ayudarnos a mejorar la documentación.

@@ -1,33 +1,33 @@
 ***************************************
-The Homestead Documentation Initiative
+La iniciativa de Documentación para Homestead Documentation
 ***************************************
 |Gitter|
 
 .. |Gitter| image:: img/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
-Purpose and Audience
+Propósito y audiencia
 ===============================================================================
 
-This guide should serve to be an entry level for all Ethereum users and developers.
-The goal is to create documentation with information, short tutorials, and examples that will cover all of the basic and intermediate functionality of using Ethereum to interact with dapps or develop a dapp.
+Esta guía debería servir como punto de inicio para todos los usuarios y desarrolladores de Ethereum.
+La meta es crear documentación con información, tutoriales cortos y ejemplos que cubran los fundamentos y funcionalidades de nivel medio al usar Ethereum para interactiad con dapps o desarrollar una dapp.
 
-Any information that is overly specific, technical, or not necessary to accomplish the documentation's goal will remain on the Ethereum Github Wiki. It may be referenced in this guide if necessary.
+Cualquier información que sea demasiado específica, técnica o no necesaria para cumplir las metas de la documentación se debe mantener en el Wiki del Github de Ethereum. De esta manera puede usarse como referencia en esta guía si es necesario.
 
-Although much of the information will be similar between the Frontier Guide and the Homestead Guide, efforts need to be made to make sure the information ported over is still accurate.
-This document is client agnostic and examples and tutorials may be based on any client that the author decides to write on, as long as a distinction is made as to what client is being used in the examples/tutorials.
+A pesar de que mucha de la información será similar entre la Guía para Frontier Guide y la guía para Homestead Guide, se requiere un esfuerzo para asegurarse de que la información heredada sigue siendo precisa.
+Este documento no está casado con ningún cliente, los ejemplos y tutoriales pueden basarse en cualquier cliente sobre el que el autor decida escribir, siempre y cuando se haga la aclaración sobre que cliente está siendo usado en los ejemplos/tutoriales.
 
-Although overly specific and technical documentation will not be included in the first iterations of this guide, community use and popularity of this guide will dictate future decisions to move Github wiki documentation to this format.
+Aunque las escecificaciones excesivas y la documentación técnica no serán incluidas en las primeras versiones de esta guía, el uso de la comunidad y la popularidad de esta guía dictarán futuras decisiones para mover la documentación del wiki de Github a este formato.
 
-Examples of overly specific and technical documentation include:
+Los ejemplos con especificaciones excesivas e información técnica incluyen:
 
-* ETHash, CASPER, ABI, RLP, or other technical specs.
-* Full API specs for protocols. Caveat: If an example, information, or tutorial needs to reference API calls for a client or interface in order to fulfill its example it is acceptable to reference the specific call. Be sure to make a reference where the user can find remaining pieces of the specific documentation that may be on the GitHub Wiki.
+* ETHash, CASPER, ABI, RLP, u otros aspectos técnicos.
+* Guías completas de API para protocolos. Advertencia: Si un ejemplo, información o tutorial necesita referencias llamadas de API para un cliente o interface para poder cubrir correctamente un ejemplo, es aceptable referencias la llamada específica. Asegúrese de hacer referencias en donde el usuario pueda encontrar las piezas restantes de la documentación específica que pudieran encontrarse en el wiki de GitHub.
 
-Resources for Exemplary Documentation
+Recursos para Documentación Ejemplar
 ===============================================================================
 
-Here are some examples of previous Ethereum documentation + good examples of documentation.
+Aquí hay unos ejemplos previos de documentación Ethereum + buenos ejemplos de documentación.
 
 * Solidity Docs - https://ethereum.github.io/solidity/docs/home/
 * Frontier Guide - https://ethereum.gitbooks.io/frontier-guide/content/
@@ -36,8 +36,8 @@ Here are some examples of previous Ethereum documentation + good examples of doc
 * Other Ethereum Links: https://souptacular.gitbooks.io/ethereum-tutorials-and-tips-by-hudson/content/giant_ethereum_resource_list.html
 * Django Docs - https://docs.djangoproject.com/en/1.9/
 
-Restructured Text Markup, Sphinx
-=======================================
+Etiquetado de Texto Reestructurado, Sphinx
+===============================================================================
 
 * Best Cheat Sheet - https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 * Quick Reference - http://docutils.sourceforge.net/docs/user/rst/quickref.html
@@ -45,10 +45,10 @@ Restructured Text Markup, Sphinx
 * RST Primer http://sphinx-doc.org/rest.html
 * http://sphinx-doc.org/markup/inline.html
 
-Compilation and Deployment
+Compilación y Desarrollo
 ===============================================================================
 
-We use `make` with the autogenerated read-the-docs `Makefile` to build the doc.
+Usamos `make` con el `Makefile` read-the-docs para compilar el documento`Makefile` to build the doc.
 
 .. code-block:: bash
 
@@ -56,10 +56,10 @@ We use `make` with the autogenerated read-the-docs `Makefile` to build the doc.
     cd homestead-guide
     make html
 
-Processing Tips
+Consejos de Procesamiento
 ===============================================================================
 
-Fix section delimiter lines (always use 80-long ones to have correct length, unless the title is greater than 80 chars in length)
+Iguale las líneas delimitadoras (use siempre líneas de 80 caracteres para tener el tamaño correcto, a menos que el título sea mayor a 80 caracteres)
 
 .. code-block:: bash
 
@@ -69,15 +69,15 @@ Fix section delimiter lines (always use 80-long ones to have correct length, unl
     for f in `ls source/*/*.rst`; do cat $f|perl -pe 's/\++$/++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++/' > $f.o; mv $f.o $f; done
     for f in `ls source/*/*.rst`; do cat $f|perl -pe 's/\#+$/################################################################################/' > $f.o; mv $f.o $f; done
 
-Referencing Old Documentation
+Documentación de Referencia Antigua
 ===============================================================================
 
-old-docs-for-reference folder has all of the Frontier Gitbook and Ethereum Wiki doc. Feel free to copy/paste information from those documents that is still relevant.
+La carpeta old-docs-for-reference tiene todo el Gitbook de Frontier y documentación de la wiki de Ethereum. Sientase libre de copiar/pegar información de estos documentos si lo considera relevante.
 
-Migrate and Convert Old Wiki Content Using Pandoc
+Migrar y Convertir Contenido Antiguo de la Wiki Usando Pandoc
 ===============================================================================
 
-If you still want to clone the absolute latest Ethereum Wiki and Frontier Guide docs:
+Si aun desea clonar el definitivamente último wiki de Ethereum Wiki y documentos de la Guía para Frontier:
 
 .. code-block:: bash
 
