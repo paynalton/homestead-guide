@@ -1,50 +1,50 @@
 ********************************************************************************
-Account Management
+Administración de Cuentas
 ********************************************************************************
 
 .. _Accounts:
 
-Accounts
+Cuentas
 ================================================================================
 
-Accounts play a central role in Ethereum. There are two types of accounts: *externally owned accounts* (EOAs) and *contract accounts*. Here we focus on externally owned accounts, which will be referred to simply as *accounts*. Contract accounts will be referred to as *contracts* and are :ref:`discussed in detail in Contracts <Contracts>`. This generic notion of account subsuming both externally owned accounts and contracts is justified in that these entities are so called *state objects*. These entities have a state: accounts have balance and contracts have both balance and contract storage. The state of all accounts is the state of the Ethereum network which is updated with every block and which the network really needs to reach a consensus about.
-Account are essential for users to interact with the Ethereum blockchain via transactions.
+Las cuentas juegan un role especial en Ethereum. Existen dos tipos de cuentas: *cuentas de propiedad externa* (EOAs) y *cuentas contractuales*. Nos centraremos en cuentas de propiedad externa, a las que llamaremos simplemente *cuentas*. A las cuentas contractuales las llamaremos *contratos* y son :ref:`discutidas a detalle en Contratos <Contracts>`. Esta noción genérica de cuenta que asume tanto cuentas de propiedad externas como contractuales se justifica en que esas dos entidades son tambien llamadas *objetos de estado*. Esas entidades tienen un estado: Las cuentas tienen balance y los contratos tienen tanto balance como almacenamiento de contrato. El estado de todas las cuentas es el estado de la red Ethereum el cual es actualizado con cada bloque y sobre el que la red en verdad necesita alcanzar un concenso.
+Las cuentas son esenciales para que los usuarios interactúen con las cadenas de bloques de Ethereum a través de transacciones.
 
-If we restrict Ethereum to only externally owned accounts and allow only transactions between them, we arrive at an "altcoin" system that is less powerful than bitcoin itself and can only be used to transfer ether.
+Si restringimos Ethereum a cuentas de propiedad externa y transacciones entre ellas sólamente, habremos conseguido un sistema de criptomoneda alternativo menos poderoso que el propio bitcon y que sólamente puede ser usado para transferir esa moneda.
 
-Accounts represent identities of external agents (e.g., human personas, mining nodes or automated agents). Accounts use public key cryptography to sign transaction so that the EVM can securely validate the identity of a transaction sender.
+Las cuentas representan identidades de agentes externos (p.e., personas humanas, mineros o agentes automatizados). Las cuentas utilizan criptografía de llave pública para firmar transaccion para que la EVM pueda validar con seguridad la identidad de un origen de transacción.
 
 Keyfiles
 ================================================================================
 
-Every account is defined by a pair of keys, a private key and public key. Accounts are indexed by their *address* which is derived from the public key by taking the last 20 bytes. Every private key/address pair is encoded in a *keyfile*. Keyfiles are JSON text files which you can open and view in any text editor. The critical component of the keyfile, your account’s private key, is always encrypted, and it is encrypted with the password you enter when you create the account. Keyfiles are found in the ``keystore`` subdirectory of your Ethereum node’s data directory. Make sure you backup your keyfiles regularly! See the section :ref:`backup-and-restore-accounts` for more information.
+Cada cuenta está definida por un par de llaves, una pública y otra privada. Las cuentas se indexan por su *dirección*, que se deriva de la llave pública al tomar los últimos 20 bytes de esta. Cada par de llave/dirección es codificada en un *keyfile*. Keyfiles ason archivos de texto JSON que pueden ser abiertos y leidos en cualquier editor de texto. El componente crítico del keyfile, la llave privada de la cuenta, siempre está encriptado usando la contraseña que se ingresa al crear la cuenta. Los keyfiles se encuentran en la carpeta ``keystore`` del directorio de datos del nodo Ethereum. ¡Asegurese de respaldar sus keyfiles regularmente! Vea la sección :ref:`backup-and-restore-accounts` para más información.
 
-Creating a key is tantamount to creating an account.
+La creación de una llave es sinónimo de la creación de una cuenta.
 
-* You don't need to tell anybody else you're doing it
-* You don't need to synchronize with the blockchain
-* You don't need to run a client
-* You don't even need to be connected to the internet
+* No necesita decirle a nadie lo que está haciendo
+* No necesita sincronizar con la cadena de bloques
+* No necesita ejecutar un cliente
+* Ni siquiera necesita estar conectado a internet
 
-Of course your new account will not contain any Ether. But it'll be yours and you can be certain that without your key and your password, nobody else can ever access it.
+Por supuesto su nueva cuenta no contendrá ningún Ether, pero será suya y puede tener la certeza de que sin su llave y su password nadie podrá accesarla nunca.
 
-It is safe to transfer the entire directory or any individual keyfile between Ethereum nodes.
+Es seguro transferir un directorio compleno o cualquier keyfile individual entre nodos Ethereum.
 
-.. Warning:: Note that in case you are adding keyfiles to your node from a different node, the order of accounts may change. So make sure you do not rely or change the index in your scripts or code snippets.
+.. Advertencia:: Notese que en casi de que añada keyfiles a su nodo desde un nodo distinto, el orden de las cuentas puede cambiar. Así que no confíe o cambie el índice en sus escripts o snippets.
 
 .. _creating_an_account:
 
-Creating an account
+Creando una Cuenta
 ================================================================================
 
-.. Warning:: **Remember your passwords and `backup your keyfiles <backup-and-restore-accounts>`_.** In order to send transactions from an account, including sending ether, you must have BOTH the keyfile and the password. Be absolutely sure to have a copy of your keyfile AND remember the password for that keyfile, and store them both as securely as possible. There are no escape routes here; lose the keyfile or forget your password and all your ether is gone. It is NOT possible to access your account without a password and there is no *forgot my password* option here. Do not forget it.
+.. Advertencia:: **Recuerde sus contraseñas y `respalde sus keyfiles <backup-and-restore-accounts>`_.** Para poder enviar transacciones desde una cuenta, incluyendo el envío de ehter, se deben poseer AMBOS, el keyfile y la contraseña. Asegúrese de tener una copia de su keyfile, recuerde la contrasela de ese keyfile, y almacene ambos de la manera más segura posible. No hay alternativas aquí; pierda el keyfile u olvide la contraseña y todo su ether se habrá esfumado. No se puede acceder a su cuenta sin una contraseña y no existe ninguna opción de *recuperar mi contraseña* aquí. No lo olvide.
 
-Using ``geth account new``
+Usando ``geth account new``
 --------------------------------------------------------------------------------
 
-Once you have the geth client installed, creating an account is merely a case of executing the ``geth account new`` command in a terminal.
+Una vez que se tiene el cliente geth instalado, crear una cuenta se reduce a ejecutae el comando ``geth account new`` en una terminal.
 
-Note that you do not have to run the geth client or sync up with the blockchain to use the ``geth account`` command.
+Tome en cuenta que no necesita iniciar el cliente geth o sincronizar con la cadena de bloques para usar el comando ``geth account``.
 
 .. code-block:: Bash
 
@@ -55,13 +55,13 @@ Note that you do not have to run the geth client or sync up with the blockchain 
     Repeat Passphrase:
     Address: {168bc315a2ee09042d83d7c5811b533620531f67}
 
-For non-interactive use you supply a plaintext password file as argument to the ``--password`` flag. The data in the file consists of the raw bytes of the password optionally followed by a single newline.
+Para un uso no interactivo, debe proporcionar un archivo de contraseña en texto plano como argumento para el parámetro ``--password``. Los datos en el archivo consisten a la forma binaria de la contraseña seguido opcionalmente de una nueva línea.
 
 .. code-block:: Bash
 
   $ geth --password /path/to/password account new
 
-..  Warning:: Using the ``--password`` flag is meant to be used only for testing or automation in trusted environments. It is a bad idea to save your password to file or expose it in any other way. If you do use the ``--password`` flag with a password file, make sure the file is not readable or even listable for anyone but you. You can achieve this in Mac/Linux systems with:
+..  Advertencia:: El uso del parámetro ``--password`` está enfocado sólamente a pruebas o automatización en entornos seguros. Es una mala idea almacenar la contraseña en un archivo o exponerla de cualquier otra manera. Si hace uso de la propiedad ``--password`` con un archivo de contraseña, asegurese de que el archivo no puede ser leído o siquiera listado por nadie demás de usted. En sistemas Mac/Linux se puede hacer de la siguiente manera:
 
 .. code-block:: Bash
 
@@ -71,7 +71,7 @@ For non-interactive use you supply a plaintext password file as argument to the 
   >I type my pass
 
 
-To list all the accounts with keyfiles currently in you’re ``keystore`` folder use the ``list`` subcommand of the ``geth account`` command:
+Para listar todas las cuentas con keyfiles que se encuentran actualmente en su carpeta ``keystore`` utilice el subcomando ``list`` del comando ``geth account``:
 
 .. code-block:: Bash
 
@@ -82,13 +82,13 @@ To list all the accounts with keyfiles currently in you’re ``keystore`` folder
   account #2: {7f444580bfef4b9bc7e14eb7fb2a029336b07c9d}
 
 
-The filenames of keyfiles has the format ``UTC--<created_at UTC ISO8601>-<address hex>``. The order of accounts when listing, is lexicographic, but as a consequence of the timestamp format, it is actually order of creation.
+Los nombres de archivo de los keyfiles tienen el formato ``UTC--<fecha_creacion UTC ISO8601>-<direccion hexadecimal>``. El orden de las cuentas cuando son listadas es lexicografico, pero como una consecuencia del formato timestamp, esto es igual que el orden de creación.
 
 
-Using geth console
+Usando la consola geth
 --------------------------------------------------------------------------------
 
-In order to create a new account using geth, we must first start geth in console mode (or you can use ``geth attach`` to attach a console to an already running instance):
+Para poder crear una nueva cuenta usando geth, primero debemos iniciar geth en modo consola (o bien puede usar ``geth attach`` para vincular a una consola que se encuentre ya en ejecución):
 
 .. code-block:: Bash
 
@@ -98,7 +98,7 @@ In order to create a new account using geth, we must first start geth in console
   at block: 865174 (Mon, 18 Jan 2016 02:58:53 GMT)
   datadir: /home/USERNAME/.ethereum
 
-The console allows you to interact with your local node by issuing commands. For example, try the command to list your accounts:
+La consola le permite interactuar con su nodo local escribiendo comandos. Por ejemplo, pruebe con el comando para listar sus cuentas:
 
 .. code-block:: Javascript
 
@@ -109,7 +109,7 @@ The console allows you to interact with your local node by issuing commands. For
   message: "no keys in store"
   }
 
-This shows that you have no accounts. You can also create an account from the console:
+Esto muestra que no posee cuentas. Cuede también crear una cuenta desde la consola:
 
 .. code-block:: Javascript
 
@@ -118,9 +118,9 @@ This shows that you have no accounts. You can also create an account from the co
   Repeat passphrase:
   "0xb2f69ddf70297958e582a0cc98bce43294f1007d"
 
-.. Note:: Remember to use a strong and randomly generated password.
+.. Nota:: Recuerde usar una contraseña fuertey aleatoria.
 
-We just created our first account. If we try to list our accounts again we can see our new account:
+Acabamos de crear nuestra primera cuenta. Si intentamos listar nuestras cuentas de nuevo podremos ver nuestra nueva cuenta:
 
 .. code-block:: Javascript
 
@@ -130,10 +130,10 @@ We just created our first account. If we try to list our accounts again we can s
 
 .. _using-mist-ethereum-wallet:
 
-Using Mist Ethereum wallet
+Usando la Cartera Mist Ethereum
 --------------------------------------------------------------------------------
 
-For the command line averse, there is now a GUI-based option for creating accounts: The “official” Mist Ethereum wallet. The Mist Ethereum wallet, and its parent Mist project, are being developed under the auspices of the Ethereum Foundation, hence the “official” status. Versions of the wallet app are available for Linux, Mac OS X, and Windows.
+Para For the command line averse, there is now a GUI-based option for creating accounts: The “official” Mist Ethereum wallet. The Mist Ethereum wallet, and its parent Mist project, are being developed under the auspices of the Ethereum Foundation, hence the “official” status. Versions of the wallet app are available for Linux, Mac OS X, and Windows.
 
 .. Warning:: The Mist wallet is beta software. Please beware and use it at your own risk.
 

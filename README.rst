@@ -6,7 +6,7 @@ Guía-Homestead
 .. |Gitter| image:: https://badges.gitter.im/ethereum/homestead-guide.svg
    :target: https://gitter.im/ethereum/homestead-guide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
-La guía paraEthereum Homestead es la documentación de referencia que acompaña a la publicación de la versión Homestead rdel proyecto Ethereum.
+La guía para Ethereum Homestead es la documentación de referencia que acompaña a la publicación de la versión Homestead del proyecto Ethereum.
 
 `Hosted on ReadTheDocs`_
 
@@ -75,7 +75,7 @@ RECURSOS
 * Gitter: https://gitter.im/ethereum/homestead-guide
 * Google doc: https://docs.google.com/document/d/1rVjrNgaDRAQdPp4rGqWrEk5fPgiHff0xsYGCyf06oM8/edit
 
-**Documentos Legales**
+**Documentos Heredados**
 
 * Ethereum Wiki: https://github.com/ethereum/wiki/wiki
 * Guía para Frontier: https://ethereum.gitbooks.io/frontier-guide/content/ (vea archivos convertidos más abajo)

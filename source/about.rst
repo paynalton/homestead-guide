@@ -1,5 +1,5 @@
 ***************************************
-La iniciativa de Documentación para Homestead Documentation
+La iniciativa de Documentación para Homestead
 ***************************************
 |Gitter|
 
@@ -10,19 +10,19 @@ Propósito y audiencia
 ===============================================================================
 
 Esta guía debería servir como punto de inicio para todos los usuarios y desarrolladores de Ethereum.
-La meta es crear documentación con información, tutoriales cortos y ejemplos que cubran los fundamentos y funcionalidades de nivel medio al usar Ethereum para interactiad con dapps o desarrollar una dapp.
+La meta es crear documentación con información, tutoriales cortos y ejemplos que cubran los fundamentos y funcionalidades de nivel medio al usar Ethereum para interactividad con dapps o desarrollar una dapp.
 
 Cualquier información que sea demasiado específica, técnica o no necesaria para cumplir las metas de la documentación se debe mantener en el Wiki del Github de Ethereum. De esta manera puede usarse como referencia en esta guía si es necesario.
 
-A pesar de que mucha de la información será similar entre la Guía para Frontier Guide y la guía para Homestead Guide, se requiere un esfuerzo para asegurarse de que la información heredada sigue siendo precisa.
+A pesar de que mucha de la información será similar entre la Guía para Frontier y la guía para Homestead, se requiere un esfuerzo para asegurarse de que la información heredada sigue siendo precisa.
 Este documento no está casado con ningún cliente, los ejemplos y tutoriales pueden basarse en cualquier cliente sobre el que el autor decida escribir, siempre y cuando se haga la aclaración sobre que cliente está siendo usado en los ejemplos/tutoriales.
 
-Aunque las escecificaciones excesivas y la documentación técnica no serán incluidas en las primeras versiones de esta guía, el uso de la comunidad y la popularidad de esta guía dictarán futuras decisiones para mover la documentación del wiki de Github a este formato.
+Aunque las especificaciones excesivas y la documentación técnica no serán incluidas en las primeras versiones de esta guía, el uso de la comunidad y la popularidad de esta guía dictarán futuras decisiones para mover la documentación del wiki de Github a este formato.
 
 Los ejemplos con especificaciones excesivas e información técnica incluyen:
 
 * ETHash, CASPER, ABI, RLP, u otros aspectos técnicos.
-* Guías completas de API para protocolos. Advertencia: Si un ejemplo, información o tutorial necesita referencias llamadas de API para un cliente o interface para poder cubrir correctamente un ejemplo, es aceptable referencias la llamada específica. Asegúrese de hacer referencias en donde el usuario pueda encontrar las piezas restantes de la documentación específica que pudieran encontrarse en el wiki de GitHub.
+* Guías completas de API para protocolos. Advertencia: Si un ejemplo, información o tutorial necesita referenciar llamadas de API para un cliente o interface para poder cubrir correctamente un ejemplo, es aceptable referencias la llamada específica. Asegúrese de hacer referencias en donde el usuario pueda encontrar las piezas restantes de la documentación específica que pudieran encontrarse en el wiki de GitHub.
 
 Recursos para Documentación Ejemplar
 ===============================================================================
@@ -48,7 +48,7 @@ Etiquetado de Texto Reestructurado, Sphinx
 Compilación y Desarrollo
 ===============================================================================
 
-Usamos `make` con el `Makefile` read-the-docs para compilar el documento`Makefile` to build the doc.
+Usamos `make` con el `Makefile` read-the-docs para compilar el documento.
 
 .. code-block:: bash
 
