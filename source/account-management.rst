@@ -133,15 +133,15 @@ Acabamos de crear nuestra primera cuenta. Si intentamos listar nuestras cuentas 
 Usando la Cartera Mist Ethereum
 --------------------------------------------------------------------------------
 
-Para For the command line averse, there is now a GUI-based option for creating accounts: The “official” Mist Ethereum wallet. The Mist Ethereum wallet, and its parent Mist project, are being developed under the auspices of the Ethereum Foundation, hence the “official” status. Versions of the wallet app are available for Linux, Mac OS X, and Windows.
+Como rival de la línea de comando, existe una opción GUI para crear cuentas: La Cartera Mist de Ethereum “oficial”. La cartera Mist de Ethereum y su padre, el proyecto Mist, comenzaron a ser desarrollados bajo el auspicio de la fundación Ethereum Foundation, por ello el estatus de “oficial”. Versiones de la cartera están disponibles para Linux, Mac OS X, y Windows.
 
-.. Warning:: The Mist wallet is beta software. Please beware and use it at your own risk.
+.. Advertencia:: La cartera Mist se encuentra en fase beta. Tenga cuidado y úsela bajo su propio riesgo.
 
-Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In fact, your first account is created during the installation of the app.
+Crear una cuenta usando la Cartera Mist de Ethereum no podría ser más sencillo. De hecho su primera cuenta es creada durante la instalación de la aplicación.
 
-1. `Download the latest version of the wallet app <https://github.com/ethereum/mist/releases>`_  for your operating system. Opening the Wallet App will kick off syncing a full copy of the Ethereum blockchain on your computer, since you will in effect be running a full geth node.
+1. `Descargue la última versión de la cartera <https://github.com/ethereum/mist/releases>`_  para su sistema operativo. Al abrir la aplicación comenzará a sincronizar una copia de la cadena de bloques de Ethereum completa en su computadora, por lo que desde ese momento estará operando efectivamente sobre un nodo geth completo.
 
-2. Unzip the downloaded folder and run the Ethereum-Wallet executable file.
+2. Descomprima la carpeta descargada e inicie el archivo ejecutable Ethereum-Wallet.
 
 .. image:: img/51Downloading.png
    :width: 582px
@@ -150,9 +150,9 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
    :alt: downloading-mist
    :align: center
 
-3. Wait for the blockchain to fully sync, then follow the instructions on the screen and your first account will be created.
+3. Espere a que se complete la sincronización de la cadena de bloques, a continuación siga las instrucciones en la pantalla y su primera cuenta será creada.
 
-4. When you launch the Mist Ethereum wallet for the first time, you will see the account you created during the installation process. By default it will be named MAIN ACCOUNT (ETHERBASE).
+4. Tras iniciar la cartera Mist Ethereum por primera vez, verá la cuenta que ha creado durante el proceso de instalación.Por defecto se llamará MAIN ACCOUNT (ETHERBASE).
 
 .. image:: img/51OpeningScreen.png
    :width: 1024px
@@ -161,70 +161,70 @@ Creating an account using the GUI Mist Ethereum wallet couldn’t be easier. In 
    :alt: opening-screen
    :align: center
 
-5. Creating additional accounts is easy; just click on ADD ACCOUNT in the app’s main screen and enter the required password.
+5. Crear cuentas adicionales es sencillo; simplemente haga click en ADD ACCOUNT dentro de la pantalla principal e ingrese la contraseña solicitada.
 
-.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+.. Nota:: La cartera Mist se encuentra en continuo desarrollo, así que los detalles sobre los pasos señalados arriba podrían sufrir cambios en futuras actualizaciones.
 
 
-Creating a Multi-Signature Wallet in Mist
+Crear una cartera MultiFirma en Mist
 --------------------------------------------------------------------------------
 
-The Mist Ethereum wallet has an option to secure your wallet balance with a multisig wallet. The advantage of using a multisig wallet is that it requires authorization from more than one account to withdrawal larger amounts from your balance. Before you can create a multisig wallet, you'll need to create more than one account.
+La cartera Mist Ethereum tiene una opción para asegurar el balance de su cartera usando una cartera multifirma. La ventaja de usar una cartera multifirma es que esta requiere autorización de más de una cuenta para obtener fondos de su balance. Antes de poder crear una cartera multifirma necesitará crear más de una cuenta.
 
-It's very easy to create account files in Mist. In the 'Accounts' section click 'Add Account'. Pick a strong yet easy-to-remember password (remember there is no password recovery option), confirm it, and your account is created. Create at least 2 accounts. Secondary accounts can be created on separate computers running Mist if you prefer (and theoretically make your multisig more secure doing it this way). You only need the public keys (your deposit addresses) of your secondary accounts when creating the multisig wallet (copy/paste them, do not ever type them by hand). Your primary account will be needed to create the multisig wallet contract, so it must be on the computer you are creating the multisig wallet on.
+Es muy sencillo crear archivos de cuenta en Mist. En la sección 'Accounts' haga click en 'Add Account'. Utilice una contraseña fuerte y fácil de recordar (recuerde que no existe manera de recuperar una contraseña), confirme la contraseña y su cuenta ha sido creada. Cree al menos dos cuentas. Las cuentas secundarias pueden ser creadas en computadoras separadas iniciando Mist sio así lo prefiere (y teóricamente hace su multifirma más segura de esta manera). Usted sólo necesita las llaves públicas (su dirección de depósito) de sus cuentas cuando se crea la cartera multifirma (copie y pegue, nunca las escriba a mano). Su cuenta primaria necesitará crear el contrato de cartera multifirma, así que esta debe estar en la computadora en la que usted creó la cartera multifirma.
 
-Now that you have your accounts setup, be safe and back them up (if your computer crashes, you will lose your balance if you do not have a backup). Click 'Backup' in the top menu. Choose the 'keystore' folder, opposite-click on it / choose 'copy' (do NOT choose 'cut', that would be very bad). Navigate to your desktop, opposite-click in a blank area and choose 'paste'. You may want to rename this new copy of the 'keystore' folder to something like 'Ethereum-keystore-backup-year-month-day' so you have quick recognition of it later. At this point you can then add the folder contents to a zip / rar file (and even password-protect the archive with another strong yet easy-to-remember password if backing up online), copy it to a USB Drive, burn it to a CD / DVD, or upload it to online storage (Dropbox / Google Drive / etc).
+Ahora que sus cuentas están configuradas, realice un respaldo (si su computadora estalla perderá todo su balance si no tiene un respaldo). Haga click en 'Backup' en el menú superior. Escoja la carpeta 'keystore', click secundario en él y escoja 'copy' (NO elija 'cut', eso podría ser mul malo). Vaya a su escritorio, click secundario en un área vacía y escoja 'paste'. Tal vez quiera renombrar esta nueva copia de la carpeta 'keystore' a algo como 'Ethereum-keystore-respaldo-YYYY-mm-dd' para así poder reconocerla fácilmente en el futuro.En este punto puede agregar los contenidos de la carpeta a un archivo zip / rar (y después proteger cel archivo con otra contraseña fuerte y fácil de recordar si se respalda en internet), copielo en un soporte USB externo, grabe en un CD / DVD, o súbalo a algún sistema de almacenamiento en línea  (Dropbox / Google Drive / etc).
 
-You now should add approximately no less than 0.02 ETH to your primary account (the account you will initiate creation of a multisig wallet with). This is required for the transaction fee when you create the multisig wallet contract. An additional 1 ETH (or more) is also needed, because Mist currently requires this to assure wallet contract transactions have enough 'gas' to execute properly...so no less than about 1.02 ETH total for starters.
+Ahora debería agregar aproximadamente no menos de 0.02 ETH a su cuenta primaria (la cuenta con la que inició la creación de la cartera multifirma). Esta es la tarifa requerida por la transacción cuando se crea el contrato de cartera multifirma. Un 1 ETH adicional (o mas) es necesario también, pues Mist actualmente lo requiere para asegurarse de que las transacciones del contrato de cartera tendrán suficiente 'gas' para ejecutarse apropiadaente...así que se necesita almenos 1.02 ETH en total para iniciar.
 
-You will be entering the full addresses of all the accounts you are attaching to this multisig wallet, when you create it. I recommend copying / pasting each address into a plain text editor (notepad / kedit / etc), after going to each account's details page in Mist, and choosing 'copy address' from the right-side column of buttons. Never type an address by hand, or you run a very high risk of typos and could lose your balance sending transactions to the wrong address.
+Ingresará la dirección completa de todas las cuentas que formarán parte de esta cartera multifirma al crearla. Recomiendo copiar y pegar cada dirección dentro de un editor de texto plano (notepad / kedit / etc), después de ir a la página de detalles de cada cuenta en Mist y elegir 'copy address' de la columna de botones de lado derecho. Nunca escriba una dirección a mano, puesto que corre un alto riesgo de cometer errores y perder su balance al enviar transacciones a la dirección equivocada.
 
-We are now ready to create the multisig wallet. Under 'Wallet Contracts', select 'Add Wallet Contract'. Give it a name, select the primary account owner, and choose 'Multisignature Wallet Contract'. You will see something like this appear:
+Ahora estamos listos para crear la cartera multifirma. En 'Wallet Contracts', seleccione 'Add Wallet Contract'. Asigne un nombre para la cartera, seleccione la cuenta propietaria primaria y escoja 'Multisignature Wallet Contract'. Verá aparecer algo como esto:
 
 "This is a joint account controlled by X owners. You can send up to X ether per day. Any transaction over that daily limit requires the confirmation of X owners."
 
-Set whatever amount of owners (accounts) you are attaching to this multisig wallet, whatever you want for a daily withdrawal limit (that only requires one account to withdrawal that amount), and how many owners (accounts) are required to approve any withdrawal amount over the daily limit.
+Establezca la cantidad de propietarios (cuentas) que se agregarán a la cartera multifirma, lo que desee establecer como límite de retiro diario (que solo requiere una cuenta para retirar ese monto), y cuantos propietarios (cuentas) se necesitan para aprovar cualquier monto por encima del límite diario establecido.
 
-Now add the addresses of the accounts that you copied / pasted into your text editor earlier, confirm all your settings are correct, and click 'Create' at the bottom. You will then need to enter your password to send the transaction. In the 'Wallet Contracts' section it should show your new wallet, and say 'creating'.
+Ahora agregue las direcciones de las cuentas que ha copiado en su editor de texto plano, confirme que todas las opciones son correctas y haga click en 'Create' en la parte de abajo. Ahora deberá ingresar su contraseña para enviar la transacción. En la sección 'Wallet Contracts' podrá ver su nueva cartera y el mensaje 'creating'.
 
-When wallet creation is complete, you should see your contract address on the screen. Select the entire address, copy / paste it into a new text file in your text editor, and save the text file to your desktop as 'Ethereum-Wallet-Address.txt', or whatever you want to name it.
+Cuando la creación de la cartera se haya completado podrá ver su dirección de contrato en la pantalla. Seleccione la dirección completa y copiela a un nuevo archivo de texto en su editor de texto. Guarde el archivo en su escritorio como 'Dirección-Cartera-Ethereum.txt', o como desee llamarle.
 
-Now all you need to do is backup the 'Ethereum-Wallet-Address.txt' file the same way you backed up your account files, and then you are ready to load your new multisig wallet with ETH using this address.
+Lo único que falta por hacer es respaldar el archivo 'Dirección-Cartera-Ethereum.txt' de la misma manera en que respaldo sus archivos de cuentas y estará listo para abrir su nueva cartera multifirma con ETH usando esa dirección.
 
-If you are restoring from backup, simply copy the files inside the 'Ethereum-keystore-backup' folder over into the 'keystore' folder mentioned in the first section of this walkthrough. FYI, you may need to create the 'keystore' folder if it's a brand new install of Mist on a machine it was never installed on before (the first time you create an account is when this folder is created). As for restoring a multisig wallet, instead of choosing 'Multisignature Wallet Contract' like we did before when creating it, we merely choose 'Import Wallet' instead.
+Si va a restaurar desde un respaldo, simplemente copie los archivos dentro de la carpeta 'Ethereum-keystore-backup' al interior de la carpeta 'keystore' que mencionamos en la primera sección de este instructivo. PSI, deberá crear la carpeta 'keystore' si es una instalación nueva de  Mist en una maquina en la que no se había instalado antes (la primera vez que se crea una cuenta es cuando se crea esta carpeta). Así mismo, para restaurar una cartera multifirma, en vez de escoger 'Multisignature Wallet Contract' como hicimos durante la creación, escogemos 'Import Wallet'.
 
-Troubleshooting:
+Solución de problemas:
 
-* Mist won't sync. One solution that works well is syncing your PC hardware clock with an NTP server so the time is exactly correct...then reboot.
+* Mist no sincroniza. Una solución que funciona bien es sincronizar el reloj de hardware de su PC con un servidor NTP para que el tiempo sea exacto y entonces reiniciar.
 
-* Mist starts after syncing, but is a blank white screen. Chances are you are running the "xorg" video drivers on a Linux-based OS (Ubuntu, Linux Mint, etc). Try installing the manufacturer's video driver instead.
+* Mist inicia después de sincronizar, pero es una pantalla vacía. En caso de estar usando los controladores de video "xorg" en un sistema basado en Linux (Ubuntu, Linux Mint, etc). Intente instalar los controladores de video del fabricante en su lugar.
 
-* "Wrong password" notice. This seems to be a false notice on occasion on current Mist versions. Restart Mist and the problem should go away (if you indeed entered the correct password).
+* Notificación "Wrong password". Parece haber una notificación equivocada ocasionalmente en las versiones actuales de Mist. Reinicie Mist y el problema desaparecerá (Necesitará ingresar la contraseña correcta).
 
 
-Using Eth
+Usando Eth
 --------------------------------------------------------------------------------
 
-Every options related to key management available using geth can be used the same way in eth.
+Cada una de las opciones relacionadas con el manejo de llaves disponibles usando geth tambien están disponibles en eth.
 
-Below are "account" related options:
-
-.. code-block:: Javascript
-
-  > eth account list  // List all keys available in wallet.
-  > eth account new   // Create a new key and add it to the wallet.
-  > eth account update [<uuid>|<address> , ... ]  // Decrypt and re-encrypt given keys.
-  > eth account import [<uuid>|<file>|<secret-hex>] // Import keys from given source and place in wallet.
-
-Below are "wallet" related option:
+Debajo verá las opciones relacionadas a "cuenta":
 
 .. code-block:: Javascript
 
-  > eth wallet import <file> //Import a presale wallet.
+  > eth account list  // Lista todas las llaves disponibles en la cartera.
+  > eth account new   // Crea una nueva llave y la agrega a la cartera.
+  > eth account update [<uuid>|<address> , ... ]  // Desencripta y reencripta las llaves dadas.
+  > eth account import [<uuid>|<file>|<secret-hex>] // Importa llaves desde el recurso dado y las coloca en cartera.
 
-.. Note:: the 'account import' option can only be used to import generic key file. the 'wallet import' option can only be used to import a presale wallet.
+Debajo están las opciones relacionadas a "cartera":
 
-It is also possible to access keys management from the integrated console (using the built-in console or geth attach):
+.. code-block:: Javascript
+
+  > eth wallet import <file> //Importa una cartera previa.
+
+.. Nota:: la opción 'account import' sólo puede ser usada para importar archivos de llave genéricos. La opción 'wallet import' sólo puede ser usada para importar una cartera previa.
+
+>También es posible acceder a la administración de llaves desde la consola integrada (usando la consola integrada o adjunta geth):
 
 .. code-block:: Javascript
 
@@ -238,24 +238,24 @@ It is also possible to access keys management from the integrated console (using
   }
 
 
-Using EthKey (deprecated)
+Usando EthKey (desaconsejado)
 --------------------------------------------------------------------------------
 
-Ethkey is a CLI tool of the C++ implementation that allows you to interact with the Ethereum wallet. With it you can list, inspect, create, delete and modify keys and inspect, create and sign transactions.
+Ethkey es una herramienta CLI de la implementación de C++ que le permite interactuar con la cartera Ethereum. Con ella usted puede listar, inspeccionar, crear y modificar llaves, e inspeccionar crear y firmar transacciones.
 
-We will assume you have not yet run a client such as eth or anything in the Aleth series of clients. If you have, you can skip this section.
-To create a wallet, run ``ethkey`` with the ``createwallet`` command:
+Asumiremos que aun no ha iniciado un cliente como eth o alguno de los clientes de la serie Aleth. Si lo ha hecho, puede saltarse esta sección.
+Para crear una cartera, ejecute ``ethkey`` con el comando ``createwallet``:
 
 .. code-block:: Bash
 
   > ethkey createwallet
 
-Please enter a MASTER passphrase to protect your key store (make it strong!):
-You'll be asked for a "master" passphrase. This protects your privacy and acts as a default password for any keys. You'll need to confirm it by entering the same text again.
+Por favor ingrese una contraseña MAESTRA para proteger su almacenamiento de llaves (¡Una buena contraseña!):
+Se le pedirá la contraseña "maestra". Esto protege su privacidad y actua como contraseña por defecto para cualquier llave. Debe confirmar la contraseña escribiendo el mismo texto una vez más.
 
-.. Note:: Use a strong randomly generated password.
+.. Nota:: Utilice una contraseña fuerte con caracteres aleatorios.
 
-We can list the keys within the wallet simply by using the list command:
+Podemos enlistar las llaves dentro de la cartera simplemente usando el comando list:
 
 .. code-block:: Bash
 
@@ -263,7 +263,7 @@ We can list the keys within the wallet simply by using the list command:
 
   No keys found.
 
-We haven't yet created any keys, and it's telling us so! Let's create one.
+Aun no hemos creado ninguna llave, ¡Eso nos dice algo! Vamos a crear una.
 
 To create a key, we use the ``new`` command. To use it we must pass a name - this is the name we'll give to this account in the wallet. Let's call it "test":
 
@@ -271,12 +271,12 @@ To create a key, we use the ``new`` command. To use it we must pass a name - thi
 
   > ethkey new test
 
-Enter a passphrase with which to secure this account (or nothing to use the master passphrase).
-It will prompt you to enter a passphrase to protect this key. If you just press enter, it'll use the default "master" passphrase. Typically this means you won't need to enter the passphrase for the key when you want to use the account (since it remembers the master passphrase). In general, you should try to use a different passphrase for each key since it prevents one compromised passphrase from giving access to other accounts. However, out of convenience you might decide that for low-security accounts to use the same passphrase.
+Ingrese una contraseña para asegurar esta cuenta (o nada para usar la contraseña maestra).
+Esto le llevará a ingresar una contraseña para proteger esta llave. Si así lo desea, sólo presione "Entrar", esto provocará el uso de la contraseña "maestra" por defecto. Tipicamente esto significa que usted no necesita ingresar la contraseña cuando desee usar la cuenta (debido a que se recuerda la contraseña maestra). En general, debería de usar una contraseña distinta para cada llave, pues esto previene el acceso a otras cuentas en caso de una contraseña comprometida.
 
-Here, let's give it the incredibly imaginative passphrase of 123. (Never ever use simple passwords like this for anything else than ephemeral test accounts).
-Once you enter a passphrase, it'll ask you to confirm it by entering again. Enter 123 a second time.
-Because you gave it its own passphrase, it'll also ask you to provide a hint for this password which will be displayed to you whenever it asks you to enter it. The hint is stored in the wallet and is itself protected by the master passphrase. Enter the truly awful hint of 321 backwards.
+Aquí, vamos a darle la increíblemente compleja e imaginativa contraseña de "123". (Nunca utilice contraseñas simples como esta para nada más que meras cuentas de prueba).
+Una vez que ha ingresado una contraseña, se le pedirá confirmarla ingresandola de nuevo. Ingrese "123" una vez más.
+Debido a que usted tiene su propia contraseña, también se le pedirá que ingrese una pista para esta contraseña, la cual será mostrada cada vez que se le pida la contraseña. La pista es almacenada en la cartera y está también protegida por la contraseña maestra. Ingrese la realmente útil pista de "321 al revés".
 
 .. code-block:: Bash
 
@@ -291,30 +291,30 @@ Because you gave it its own passphrase, it'll also ask you to provide a hint for
     ICAP: XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ
     Raw hex: 0092e965928626f8880629cec353d3fd7ca5974f
 
-All normal (aka direct) ICAP addresses begin with XE so you should be able to recognize them easily. Notice also that the key has another identifier after Created key. This is known as the UUID. This is a unique identifier for the key that has absolutely nothing to do with the account itself. Knowing it does nothing to help an attacker discover who you are on the network. It also happens to be the filename for the key, which you can find in either ~/.web3/keys (Mac or Linux) or $HOME/AppData/Web3/keys (Windows).
-Now let's make sure it worked properly by listing the keys in the wallet:
+Toras las direcciones ICAP comienzan con XE así que debería ser capaz de reconocerlas fácilmente. Podrá ver que la llave tiene otro identificador después de Created key. A esto se le conoce como UUID. Se trata de un identificador único que no tiene absolutamente nada que hacer con la cuenta en si misma. Conocerla no ayuda a ningún atacante a descubrir que se encuentra en la red. Esto pasa también con el nombre del archivo de la llave, que se puede encontrar ya sea en ~/.web3/keys (Mac or Linux) o en $HOME/AppData/Web3/keys (Windows).
+Ahora vamos a asegurarnos de que funciona adecuadamente en la cartera:
 
 .. code-block:: Bash
 
   > ethkey list
   055dde03-47ff-dded-8950-0fe39b1fa101 0092e965… XE472EVKU3CGMJF2YQ0J9RO1Y90BC0LDFZ  test
 
-It reports one key on each line (for a total of one key here). In this case our key is stored in a file 055dde... and has an ICAP address beginning XE472EVK.... Not especially easy things to remember so rather helpful that it has its proper name, test, too.
+Esto reporta una llave en cada línea (un total de una llave aquí). En este caso nuestra llave está almacenada en un archivo 055dde... y tiene una dirección ICAP que comienza con XE472EVK.... No son cosas especialmente sencillas de recordar, así que es muy útil que tengan su propio nombre, prueba, también.
 
-Importing your presale wallet
+Importando su cartera de preventa
 ================================================================================
 
 
-Using Mist Ethereum wallet
+Usando la Cartera Mist Ethereum
 --------------------------------------------------------------------------------
 
-Importing your presale wallet using the GUI Mist Ethereum wallet is very easy. In fact, you will be asked if you want to import your presale wallet during the installation of the app.
+Importar su cartera de preventa usando la cartera gráfica Mist Ethereum es muy sencillo. De hecho se le preguntará si desea importar su cartera de preventa durante la instalación de la aplicación.
 
-.. Warning:: Mist wallet is beta software. Beware and use it at your own risk.
+.. Advertencia:: la cartera Mist es un software beta. Tenga cuidado y uselo bajo su propio riesgo.
 
-Instructions for installing the Mist Ethereum wallet are given in the section :ref:`Creating an account: Using Mist Ethereum wallet <using-mist-ethereum-wallet>`.
+Las instrucciones sobre como instalar la cartera Mist Ethereum se encuentran en la sección :ref:`Creando una cuenta: Usando la cartera Mist Ethereum <using-mist-ethereum-wallet>`.
 
-Simply drag-and-drop your ``.json`` presale wallet file into the designated area and enter your password to import your presale account.
+Simplemente arrastre su archivo de cartera de preventa ``.json`` en el área designada e ingrese su contraseña para importar su cuenta de preventa.
 
 .. image:: img/51PresaleImportInstall.png
    :width: 582px
@@ -323,42 +323,42 @@ Simply drag-and-drop your ``.json`` presale wallet file into the designated area
    :alt: presale-import
    :align: center
 
-If you choose not to import your presale wallet during installation of the app, you can import it at any time by selecting the ``Accounts`` menu in the app’s menu bar and then selecting ``Import Pre-sale Accounts``.
+Si escoge no importar su cartera de preventa durante la instalación de la aplicación, puede importarla en cualquier momento seleccionando el menú ``Accounts`` en la barra de menú y escogiendo ``Import Pre-sale Accounts``.
 
-.. Note:: The Mist wallet is still in active development, so details of the steps outlined above may change with upgrades.
+.. Nota:: La cartera Mist se encuentra en desarrollo activo, por lo que los pasos específicos descritos arriba pueden cambiar en futuras actualizaciones.
 
-Using geth
+Usando geth
 --------------------------------------------------------------------------------
 
-If you have a standalone installation of geth, importing your presale wallet is accomplished by executing the following command in a terminal:
+Si usted tiene una instalación en solitario de geth, importar su cartera de preventa se logra ejecutando el siguiente comando en una terminal:
 
 .. code-block:: Bash
 
-  geth wallet import /path/to/my/presale-wallet.json
+  geth wallet import /ruta/a/mi/cartera_de_preventa.json
 
-You will be prompted to enter your password.
+Se le pedirá ingresar su contraseña.
 
-Updating an account
+Actualizando una cuenta
 ================================================================================
 
-You are able to upgrade your keyfile to the latest keyfile format and/or upgrade your keyfile password.
+Usted es capaz de actualizar su archivo llave al último formato y/o actualizar la contraseña de su archivo llave.
 
-Using geth
+Usando geth
 --------------------------------------------------------------------------------
 
-You can update an existing account on the command line with the ``update`` subcommand with the account address or index as parameter. Remember that the account index reflects the order of creation (lexicographic order of keyfile names containing the creation time).
+Puede actualizar una cuenta existente en la línea de comandos usando el subcomando ``update`` con la dirección de la cuenta o el índice como parámetro. Recuerde que el índice de la cuenta refleja el orden de creación (orden alfabético de los archivos llave por nombre que contiene la fecha de creación).
 
 .. code-block:: Bash
 
   geth account update b0047c606f3af7392e073ed13253f8f4710b08b6
 
-or
+ó
 
 .. code-block:: Bash
 
   geth account update 2
 
-For example:
+Por ejemplo:
 
 .. code-block:: Bash
 
@@ -373,68 +373,68 @@ For example:
   Repeat Passphrase:
   0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b
 
-The account is saved in the newest version in encrypted format, you are prompted for a passphrase to unlock the account and another to save the updated file. This same command can be used to migrate an account of a deprecated format to the newest format or change the password for an account.
+La cuenta es guardada en la nueva versión de formato encriptado, se le pedirá una contraseña para desbloquear la cuenta y otra para guardar el archivo actualizado. Este mismo comando puede ser usado para migrar una cuenta de un formato obsoleto a un nuevo formato o para cambiar la contraseña de una cuenta.
 
-For non-interactive use the passphrase can be specified with the ``--password`` flag:
+Para un uso no interactivo la contraseña puede ser especificada en el parámetro ``--password`` :
 
 .. code-block:: Bash
 
   geth --password <passwordfile> account update a94f5374fce5edbc8e2a8697c15331677e6ebf0bs
 
-Since only one password can be given, only format update can be performed, changing your password is only possible interactively.
+Debido a que de esta manera sólo se puede proveer una contraseña, sólo se puede hacer el cambio de formato. Cambiar la contraseña solo se puede hacer de manera interactiva.
 
-.. Note:: account update has the side effect that the order of your accounts may change. After a successful update, all previous formats/versions of that same key will be removed!
+.. Nota:: la actualización de cuentas tiene el efecto colateras de que el orden de sus cuentas puede cambiar. !Después de completar una actualización, todas las versiones/formatos anteriores de la misma llave serán eliminados!
 
 
 .. _backup-and-restore-accounts:
 
-Backup and restore accounts
+Respaldar y restaurar cuentas
 ================================================================================
 
-Manual backup/restore
+Respaldo/recuperación Manual
 --------------------------------------------------------------------------------
 
-You must have an account’s keyfile to be able to send any transaction from that account. Keyfiles are found in the keystore subdirectory of your Ethereum node’s data directory. The default data directory locations are platform specific:
+Debe tener un archivo llave de cuenta para ser capaz de enviar cualquier transacción desde esa cuenta. Los archivos llave se encuentran en el subdirectorio keystore dentro del directorio de datos de su nodo Ethereum. La localización del directorio de datos por defecto depende de la plataforma:
 
 - Windows: ``C:\Users\username\%appdata%\Roaming\Ethereum\keystore``
 - Linux: ``~/.ethereum/keystore``
 - Mac: ``~/Library/Ethereum/keystore``
 
-To backup your keyfiles (accounts), copy either the individual keyfiles within the ``keystore`` subdirectory or copy the entire ``keystore`` folder.
+Para respaldar sus archivos llave (cuentas), copie cada uno de los archivos llave individuales contenidos en el subdirectorio ``keystore`` o copie la carpeta ``keystore`` completa.
 
-To restore your keyfiles (accounts), copy the keyfiles back into the ``keystore`` subdirectory, where they were originally.
+Para restaurar sus archivos llave (cuentas), copie los archivos de vuelta dentro del subdirectorio ``keystore``, en donde se encontraban originalmente.
 
-Importing an unencrypted private key
+Importando una llave privada sin encriptar
 --------------------------------------------------------------------------------
 
-Importing an unencrypted private key is supported by ``geth``
+La importación de una llave privada sin encriptar está soportado por ``geth``
 
 .. code-block:: Bash
 
-  geth account import /path/to/<keyfile>
+  geth account import /ruta/a/<archivo_llave>
 
-This command imports an unencrypted private key from the plain text file ``<keyfile>`` and creates a new account and prints the address.
-The keyfile is assumed to contain an unencrypted private key as canonical EC raw bytes encoded into hex.
-The account is saved in encrypted format, you are prompted for a passphrase. You must remember this passphrase to unlock your account in the future.
+Este comando importa ina llave no encriptada desde un archivo de texto plano ``<archivo_llave>``, crea una nueva cuenta y muestra su dirección.
+Se asume que el archivo llave contiene una llave privada sin encriptar con bytes en bruto de EC canónico codificados en hexadecimal.
+La cuenta es guardada en formato encriptado, se le pide una contraseña. Debe recordar dicha contraseña para desbloquear su cuenta en el futuro.
 
-An example where the data directory is specified. If the ``--datadir`` flag is not used, the new account will be created in the default data directory, i.e., the keyfile will be places in the ``keyfiles`` subdirectory of the data directory.
+Un ejemplo en el que el directorio de datos es especificado. Si no se usa el parámetro ``--datadir``, la nueva cuenta será creada en el directorio de datos por defecto, por ejemplo, el archivo llave será colocado en el subdirectorio ``keyfiles`` dentro del directorio de datos.
 
 .. code-block:: Bash
 
-  $ geth --datadir /someOtherEthDataDir  account import ./key.prv
+  $ geth --datadir /algunOtroDirectorioDeDatosEth  account import ./key.prv
   The new account will be encrypted with a passphrase.
   Please enter a passphrase now.
   Passphrase:
   Repeat Passphrase:
   Address: {7f444580bfef4b9bc7e14eb7fb2a029336b07c9d}
 
-For non-interactive use the passphrase can be specified with the ``--password`` flag:
+Para un uso no interactivo la contraseña piede ser especificada usando el parámetro ``--password``:
 
 .. code-block:: Bash
 
-  geth --password <passwordfile> account import <keyfile>
+  geth --password <archivoDecontraseña> account import <archivo_llave>
 
 
-.. Note:: Since you can directly copy your encrypted accounts to another Ethereum instance, this import/export mechanism is not needed when you transfer an account between nodes.
+.. Nota:: Debido a que puede copiar directamente sus cuentas encriptadas a otra instancia de Ethereum, este mecanismo de importación/exportación no es necesario cuando transfiere una cuenta entre nodos.
 
-.. Warning:: When you copy keys into an existing node's ``keystore``, the order of accounts you are used to may change. Therefore you make sure you either do not rely on the account order or double-check and update the indexes used in your scripts.
+.. Advertencia:: Cuando copie llaves en el ``keystore`` de un nodo existente, el orden de cuentas que estaba usando puede cambiar. Por tanto asegurese de no confiar en el orden por completo o realice una doble revisión y actualice los índices usados en sus scripts.
