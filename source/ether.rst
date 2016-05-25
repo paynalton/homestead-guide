@@ -2,39 +2,37 @@
 Ether
 ********************************************************************************
 
-What is ether?
+¿Qué es Ether?
 ================================================================================
 
-Ether is the name of the currency used within Ethereum. It is used to pay for
-computation within the EVM. This is done indirectly by purchasing gas for ether as explained in _`gas`.
+Ether es el nombre de la moneda usada en Ethereum y es usada para pagar por computación dentro de la EVM. Esto se hace intercambiando directamente gas por ether tal y como se explica en _`Gas`.
 
-Denominations
+Denominaciones
 --------------------------------------------------------
 
-Ethereum has a metric system of denominations used as units of Ether. Each denomination has its own unique name (some bear the family name of seminal figures playing a role in evolution of computer science and cryptoeconomics). The smallest denomination aka *base unit* of Ether is called Wei. Below is a list of the named denominations and
-their value in Wei. Following a common (although somewhat ambiguous) pattern, Ether also designates a unit (of 1e18 or one quintillion Wei) of the currency. Note that the currency is not called Ethereum as many mistakenly think, nor is Ethereum a unit.
+Ethereum posee un sistema métrico de denominaciones usado como unidades de Ether. Cada denominación tiene su propio nombre único (algunos portan el apellido de figuras que han jugado un rol seminal en la evolución de las ciencias de la computación y la criptoeconomía). La denominación más baja ó *unidad base* de Ether se llama Wei. Debajo se encuentra una lista de nombres de denominaciones y su valor en Wei. siguiendo un patrón común (para algunos un poco ambíguo). Ether también designa una unidad (de 1e18 o un quintillón de Wei) de la moneda. Observe que la moneda no es llamada Ethereum como muchos equivocadamente suponen, tampoco es Ethereum una unidad.
 
 
 +-------------------------+-----------+-------------------------------------------+
-| Unit                    | Wei Value | Wei                                       |
+| Unidad                  | Valor en Wei  | Wei                                   |
 +=========================+===========+===========================================+
-| **wei**                 | 1 wei     | 1                                         |
+| **wei**                 | 1 wei         | 1                                     |
 +-------------------------+-----------+-------------------------------------------+
-| **Kwei (babbage)**      | 1e3 wei   | 1,000                                     |
+| **Kwei (babbage)**      | 1e3 wei       | 1,000                                 |
 +-------------------------+-----------+-------------------------------------------+
-| **Mwei (lovelace)**     | 1e6 wei   | 1,000,000                                 |
+| **Mwei (lovelace)**     | 1e6 wei       | 1,000,000                             |
 +-------------------------+-----------+-------------------------------------------+
-| **Gwei (shannon)**      | 1e9 wei   | 1,000,000,000                             |
+| **Gwei (shannon)**      | 1e9 wei       | 1,000,000,000                         |
 +-------------------------+-----------+-------------------------------------------+
-| **microether (szabo)**  | 1e12 wei  | 1,000,000,000,000                         |
+| **microether (szabo)**  | 1e12 wei      | 1,000,000,000,000                     |
 +-------------------------+-----------+-------------------------------------------+
-| **milliether (finney)** | 1e15 wei  | 1,000,000,000,000,000                     |
+| **milliether (finney)** | 1e15 wei      | 1,000,000,000,000,000                 |
 +-------------------------+-----------+-------------------------------------------+
-| **ether**               | 1e18 wei  | 1,000,000,000,000,000,000                 |
+| **ether**               | 1e18 wei      | 1,000,000,000,000,000,000             |
 +-------------------------+-----------+-------------------------------------------+
 
 
-Ether supply
+Más sobre Ether
 =========================
 
 * https://blog.ethereum.org/2014/04/10/the-issuance-model-in-ethereum/
@@ -43,32 +41,32 @@ Ether supply
 * https://www.reddit.com/r/ethtrader/comments/48yqg6/is_there_a_cap_like_with_btc_with_how_many_ether/
 
 
-Getting ether
+Obteniendo ether
 ================================================================================
 
-In order to obtain Ether, you need to either
+Para obtener Ether, usted puede:
 
-* become an Ethereum miner (see _`Mining`)  or
-* trade other currencies for Ether using centralised or trustless services
-* use the user friendly `Mist Ethereum GUI Wallet <https://github.com/ethereum/mist/releases>`_ that as of Beta 6 introduced the ability to purchase ether using the http://shapeshift.io/ API.
+* convertirse en minero Ethereum (vea _`Mining`)
+* cambiar otras monedas por Ether usando servicios centralizados o de confianza
+* utilizar la muy amigable `Cartera Mist Ethereum <https://github.com/ethereum/mist/releases>`_ que desde su versión Beta 6 introdujo la capacidad de comprar ether usando la API http://shapeshift.io/
 
-Trustless services
+Servicios de confianza
 --------------------------------------------------------------------------------
 
-Note that the Ethereum platform is special in that the smart contracts enable trustless services that obviate the need for trusted third parties in a currency exchange transaction, ie. disintermediate currency exchange businesses.
+Podrá notar que la plataforma Ethereum tiene la particularidad de que los contratos inteligentes permiten el uso de servicios de confianza, los cuales obvian la necesidad de terceras partes de confianza en una transacción de intercambio de divisas. Esto es, negocios de intercambio de divisas sin intermediarios.
 
-Such projects (alpha/prelaunch status at the time of writing) are:
+Estos proyectoss (en estado alpha/prelanzamiento al momento de escribir esto) son:
 
 * `BTCrelay <http://btcrelay.org/>`_
-   * `More information <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (about ETH/BTC 2-way peg without modifying bitcoin code).
+   * `Más información <https://medium.com/@ConsenSys/taking-stock-bitcoin-and-ethereum-4382f0a2f17>`_ (sobre pagos ETH/BTC de dos vías sin modificar código bitcoin).
    * `BTCrelay audit <http://martin.swende.se/blog/BTCRelay-Auditing.html>`_
-* `EtherEx decentralised exchange <https://etherex.org>`_.
+* `Intercambio descentralizado EtherEx <https://etherex.org>`_.
 
-List of centralised exchange marketplaces
+Lista de mercados de intercambio centralizado
 --------------------------------------------------------------------------------
 
 ========================== ============================
-Exchange                   Currencies
+Cambiador                   Monedas
 ========================== ============================
 Poloniex                   BTC
 Kraken                     BTC, USD, EUR, CAD, GBP
@@ -86,12 +84,12 @@ Metaexchange               BTC
 ========================== ============================
 
 
-Centralised fixed rate exchanges
+Cambiadores de tasa fija Centralizados
 -----------------------------------
 
 
 ========================== ============================
-Exchange                   Currencies
+Cambiados                   Monedas
 ========================== ============================
 `Shapeshift`_              BTC, LTC, DOGE, Other
 `Bity`_                    BTC, USD, EUR, CHF
@@ -101,11 +99,11 @@ Exchange                   Currencies
 .. _Shapeshift: shapeshift.io
 
 
-Trading and price analytics
+Comercio y análisis de precios
 --------------------------------------------------------------------------------
 
-* `ETH markets exhaustive listing by volume on coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
-* Aggregating realtime stats of major ETH markets:
+* `Lista exhaustiva de mercados ETH markets por volúmen en coinmarketcap <https://coinmarketcap.com/currencies/ethereum/#markets>`_
+* Estadísticas de agregación en tiempo real de los principales mercados ETH:
 
   * `Tradeblock <https://tradeblock.com/ethereum>`_
   * `EthereumWisdom <http://ethereumwisdom.com>`_
@@ -115,66 +113,66 @@ Trading and price analytics
 
 .. _online-wallets-and-storage-solutions:
 
-Online wallets, paper wallets, and cold storage
+Carteras en línea, carteras de papel y almacenamiento en frio
 ================================================================================
 
 .. todo::
-  This is here just a dumping ground of links and notes
-  Please move this over in a listing form to ecosystem
+  Este es sólo un volcado de enlaces y notas.
+  Favor de transformar esto en una forma de lista para ecosistema.
 
-  Keep examples here, maybe explain paranoid practices, list dangers
+  Mantenga los ejemplos aquí, posiblemente explicar prácticas paranóicas, listar peligros
 
-* Mist Ethereum Wallet
-    * `Releases to download <https://github.com/ethereum/mist/releases>`_
-    * `Mist Ethereum Wallet developer preview <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - foundation blog post
-    * `How to easily set up the Ethereum Mist wallet! <https://www.youtube.com/watch?v=Z6lE0Ctaeqs>`_ - Tutorial by Tommy Economics
+* Cartera Mist Ethereum
+    * `Versiones para descargar <https://github.com/ethereum/mist/releases>`_
+    * `Versión de desarrollo de la Cartera Mist Ethereum <https://blog.ethereum.org/2015/09/16/ethereum-wallet-developer-preview/>`_ - fundación, blog, avisos
+    * `¡Qué sencillo es configurar la Cartera Mist! <https://www.youtube.com/watch?v=Z6lE0Ctaeqs>`_ - Tutorial por Tommy Economics
 * Kryptokit Jaxx
-    * `Jaxx main site <http://jaxx.io/>`_
-    * `Mobile release <http://favs.pw/first-ethereum-mobile-app-released/#.VsHn_PGPL5c>`_
+    * `Sitio principal de Jaxx <http://jaxx.io/>`_
+    * `Versión móvil <http://favs.pw/first-ethereum-mobile-app-released/#.VsHn_PGPL5c>`_
 * Etherwall
-    * `Etherwall website <http://www.etherwall.com/>`_
-    * `Etherwall source <https://github.com/almindor/etherwall>`_
+    * `Sitio de Etherwall <http://www.etherwall.com/>`_
+    * `Código fuente de Etherwall <https://github.com/almindor/etherwall>`_
 * MyEtherWallet
-    * `MyEtherWallet website <https://www.myetherwallet.com/>`_
-    * `MyEtherWallet source <https://github.com/kvhnuke/etherwallet/>`_
-    * `Chrome extension <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
-* Cold storage
-    * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Cold storage based on lightwallet with HD wallet library integrated.
-    * `Reddit discussion 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
-    * `How to setup a cold storage wallet <https://www.reddit.com/r/ethereum/comments/48wfbv/eli5_how_to_setup_a_cold_storage_wallet_as/>`_
-* Hardware wallet
-    * `reddit discussion 2 <https://www.reddit.com/r/ethereum/comments/45siaq/hardware_wallet/>`_
-    * `reddit discussion 3 <https://www.reddit.com/r/ethereum/comments/4521o4/crowdfunding_ethereum_hardware_cold_storage_wallet/>`_
-* Brain wallet
-    * brain wallets are not safe, do not use them. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
-    * Extreme caution with brain wallets. Read the recent controversy: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets vs http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
+    * Sitio de `MyEtherWallet <https://www.myetherwallet.com/>`_
+    * `Código fuente de MyEtherWallet <https://github.com/kvhnuke/etherwallet/>`_
+    * `Extensión para Chrome <http://sebfor.com/myetherwallet-chrome-extension-release/>`_
+* Almacenamiento en frío
+    * `Icebox <https://github.com/ConsenSys/icebox>`_ by `ConsenSys <https://consensys.net/>`_ - Almacenamiento en frio basado en  lightwallet con la librería HD integrada.
+    * `Reddit discusión 1 <https://www.reddit.com/r/ethereum/comments/45uvmy/offline_cold_storage_question/offline_cold_storage_question>`_
+    * `Cómo configurar una cartera de almacenamiento en frío <https://www.reddit.com/r/ethereum/comments/48wfbv/eli5_how_to_setup_a_cold_storage_wallet_as/>`_
+* Cartera física
+    * `reddit discusión 2 <https://www.reddit.com/r/ethereum/comments/45siaq/hardware_wallet/>`_
+    * `reddit discusión 3 <https://www.reddit.com/r/ethereum/comments/4521o4/crowdfunding_ethereum_hardware_cold_storage_wallet/>`_
+* Cartera inteligente
+    * las carteras inteligentes no son seguras, no las use. https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/
+    * Cuidado extremo con las carteras inteligentes. Lea la reciente controversia: https://reddit.com/r/ethereum/comments/43fhb5/brainwallets contra http://blog.ether.camp/post/138376049438/why-brain-wallet-is-the-best
 * Misc
-    * `Kraken Wallet Sweeper Tool <https://www.kraken.com/ether>`_ - Pre-sale wallet import
-    * `Recommended ways to safely store ether <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
-    * `How to buy and store ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
-    * `A laymen's intro into brute forcing and why not to use brain wallets <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
+    * `Herramienta de limpieza de cartera Kraken <https://www.kraken.com/ether>`_ - Importación de cartera de preventa
+    * `Métodos recomendados para almacenar ether con seguridad <http://ethereum.stackexchange.com/questions/1239/what-is-the-recommended-way-to-safely-store-ether>`_
+    * `Como comprar y almacenar ether <http://sebfor.com/how-to-buy-and-store-ether/>`_
+    * `Una introducción legal a la fuerza bruta y porque no usar carteras inteligentes <http://www.fastcompany.com/3056651/researchers-find-a-crack-that-drains-supposedly-secure-bitcoin-wallets>`_
     * `Pyethsaletool <https://github.com/ethereum/pyethsaletool/blob/master/README.md>`_
-    * `Account vs wallet <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
+    * `Cuenta contra cartera <https://www.reddit.com/r/ethereum/comments/47j3r5/eli5_accounts_vs_wallet_contracts_on_mist/>`_
 
-Sending ether
+Enviando ether
 ================================================================================
 
-The `Ethereum Wallet  <https://github.com/ethereum/mist/releases>`_  supports sending ether via a graphical interface.
+La `Cartera Ethereum <https://github.com/ethereum/mist/releases>`_  soporta el envío de ether por medio de una interface gráfica.
 
-Ether can also be transferred using the **geth console**.
+El Ether también puede transferirse usando la **consola geth**.
 
 .. code-block:: console
 
-    > var sender = eth.accounts[0];
-    > var receiver = eth.accounts[1];
-    > var amount = web3.toWei(0.01, "ether")
-    > eth.sendTransaction({from:sender, to:receiver, value: amount})
+    > var remitente = eth.accounts[0];
+    > var remisor = eth.accounts[1];
+    > var cantidad = web3.toWei(0.01, "ether")
+    > eth.sendTransaction({from:remitente, to:remisor, value: cantidad})
 
-For more information of Ether transfer transactions, see :ref:`account-types-gas-and-transactions`.
+Para más información sobre las transacciones de transferencia de Ether, vea :ref:`account-types-gas-and-transactions`.
 
-Ethereum is unique in the realm of cryptocurrencies in that ether has utility value as a cryptofuel, commonly referred to as "gas". Beyond transaction fees, gas is a central part of every network request and requires the sender to pay for the computing resources consumed. The gas cost is dynamically calculated, based on the volume and complexity of the request and multiplied by the current gas price. Its value as a cryptofuel has the effect of increasing the stability and long-term  demand for ether and Ethereum as a whole. For more information, see :ref:`account-types-gas-and-transactions`.
+Ethereum es único en el mundo de las criptomonedas en la manera en que su principal valor utilitario es como criptocombustible (llamado comúnmente "gas"). Más allá de cargos de tarifas de transacción, el gas es una aparte central de cada petición de red y requiere que el remitente pague por los recursos consumidos- El costo del gas es calculado dinámicamente basandose en el volúmen y compejidad de la petición y multiplicado por el precio actual del gas. Este valor como criptocombustible tiene el efecto de incrementar la estabilidad y duración de la demanda de ether y Ethereum  en general. Para más información vea :ref:`account-types-gas-and-transactions`.
 
-Gas and ether
+Gas y ether
 =============================
 
 * https://www.reddit.com/r/ethereum/comments/271qdz/can_someone_explain_the_concept_of_gas_in_ethereum/
@@ -182,13 +180,13 @@ Gas and ether
 * https://www.reddit.com/r/ethereum/comments/49gol3/can_ether_be_used_as_a_currency_eli5_ether_gas/
 
 
-Gas is supposed to be the constant cost of network resources/utilisation. You want the real cost of sending a transaction to always be the same, so you can't really expect Gas to be issued, currencies in general are volatile.
+Gas supone ser la constante de costo de uso/recursos de la red. Uno espera que el costo real de enviar una transacción sea siempre el mismo, así que nunca tendrá el Gas que ser realmente un problema, las monedas en general son volátiles.
 
-So instead, we issue Ether whose value is supposed to vary, but also implement a Gas Price in terms of Ether. If the price of Ether goes up, the Gas Price in terms of Ether should go down to keep the real cost of Gas the same.
+En vez de eso el problema se queda en Ether, cuyo valor tiende a variar, pero también se define un Precio del Gas en términos de Ether. Si el precio de Ether se eleva, el precio del Gas, en términos del Ether, debería bajar para mantener el costo real del Gas estable.
 
-Gas has multiple associated terms with it: Gas Prices, Gas Cost, Gas Limit, and Gas Fees. The principle behind Gas is to have a stable value for how much a transaction or computation costs on the Ethereum network.
+El Gas tiene múltiples términos asociados a si mismo: Precio del Gas, Costo del Gas, Límite de Gas, y Tarifas del Gas. El principio detrás del Gas es tener un valor estable para toda transacción o costo de computación en la red Ethereum.
 
-* Gas Cost is a static value for how much a computation costs in terms of Gas, and the intent is that the real value of the Gas never changes, so this cost should always stay stable over time.
-* Gas Price is how much Gas costs in terms of another currency or token like Ether. To stabilise the value of gas, the Gas Price is a floating value such that if the cost of tokens or currency fluctuates, the Gas Price changes to keep the same real value. The Gas Price is set by the equilibrium price of how much users are willing to spend, and how much processing nodes are willing to accept.
-* Gas Limit is the maximum amount of Gas that can be used per block, it is considered the maximum computational load, transaction volume, or block size of a block, and miners can slowly change this value over time.
-* Gas Fee is effectively the amount of Gas needed to be paid to run a particular transaction or program (called a contract). The Gas Fees of a block can be used to imply the computational load, transaction volume, or size of a block. The gas fees are paid to the miners (or bonded contractors in PoS).
+* Costo del Gas es un valor estático sobre cuanto cuesta un cómputo en términos de Gas, y la intención es que el valor real del Gas nunca cambie, así que el costo debería mantenerse siempre estable a lo largo del tiempo.
+* Precio del Gas es el costo del Gas en términos de otra moneda o token como Ether. Para estabilizar el valor del gas, el Precio del Gas es un valor flotante que si el costo del token o moneda fluctua, el Precio del Gas cambia para mantener el mismo valor real. El Precio del Gas es establecido por el valor equilibrado de cuantos usuarios van a gastar y cuantos nodos de procesamiento están dispuestos a aceptar.
+* Límite de Gas es el monto máximo de Gas que puede ser usado por bloque, esto considerando la máxima carga computacional, volúmen de transacción o tamaño de bloque, y los mineros pueden cambiar lentamente este valor sobre el tiempo.
+* Tarifa de Gas es efectivamente el monto de Gas que debe pagarse para ejecutar una transacción en particular o programa (llamado contrato). Las tarifas de Gas de un bloque pueden usarse para implicar la carga computacional, volúmen de transacción o tamaño de un bloque. Las Tarifas de Gas se pagan a los mineros (o contractores garantizados en PoS).
